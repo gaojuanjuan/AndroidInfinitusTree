@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    tools:context="com.example.gd.androidinfinitustree.TreeActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_above="@id/toolBar">
+        <ListView
+            android:id="@+id/code_list"
+            android:background="#ffffffff"
+            android:fadingEdgeLength="0.0sp"
+            android:drawSelectorOnTop="false"
+            android:cacheColorHint="#ffffffff"
+            android:divider="@mipmap/divider_list"
+            android:dividerHeight="2dp"
+            android:fastScrollEnabled="true"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </RelativeLayout>
+
+    <include layout="@layout/toolbar_bottom"/>
+
+</LinearLayout>
